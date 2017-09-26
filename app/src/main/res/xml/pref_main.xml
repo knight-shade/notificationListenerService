@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Preference category">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:key="switch_preference_1"
+            android:title="Switch preference" />
+        <EditTextPreference
+            android:defaultValue="@string/default_gallery_storage"
+            android:key="@string/key_gallery_name"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/title_gallery_storage" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="Check box preference" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_upload_quality_entries"
+            android:entryValues="@array/pref_upload_quality_values"
+            android:key="list_preference_1"
+            android:title="List preference" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
